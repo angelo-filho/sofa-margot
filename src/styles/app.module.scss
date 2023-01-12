@@ -1,0 +1,55 @@
+.container {
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product_info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+
+  > div {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    h1 {
+      font-family: "Crimson Pro", serif;
+      font-size: 32px;
+      font-weight: 600;
+    }
+
+    span {
+      text-transform: uppercase;
+      font-size: 10px;
+      font-weight: 300;
+
+      & ~ span {
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: 400;
+      }
+    }
+  }
+
+  > button {
+    width: fit-content;
+    padding: 0.5rem 1rem;
+
+    background-color: transparent;
+    border: 1px inset var(--purple-600);
+    border-radius: 999px;
+
+    text-transform: uppercase;
+
+    transition: 0.2s;
+
+    &:hover {
+      color: var(--pink-300);
+      background: var(--purple-600);
+    }
+  }
+}

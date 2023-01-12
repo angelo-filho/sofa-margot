@@ -1,0 +1,27 @@
+:root {
+  --pink-300: #d9cdf7;
+  --purple-600: #271a45;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  background-color: var(--pink-300);
+
+  color: var(--purple-600);
+}
+
+button {
+  cursor: pointer;
+}
