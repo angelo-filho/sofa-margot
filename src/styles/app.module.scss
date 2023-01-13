@@ -2,8 +2,33 @@
   min-height: 100vh;
 
   display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+}
+
+.product {
+  position: relative;
+
+  margin-left: -100px;
+
+  > img {
+    object-fit: cover;
+    width: 449px;
+  }
+
+  > button {
+    position: absolute;
+    top: 0;
+    right: 63px;
+
+    display: grid;
+    place-items: center;
+
+    background-color: transparent;
+    border: transparent;
+  }
 }
 
 .product_info {
@@ -14,22 +39,21 @@
   > div {
     display: flex;
     flex-direction: column;
-    gap: 12px;
 
     h1 {
       font-family: "Crimson Pro", serif;
-      font-size: 32px;
+      font-size: 2rem;
       font-weight: 600;
     }
 
     span {
       text-transform: uppercase;
-      font-size: 10px;
+      font-size: 0.625rem;
       font-weight: 300;
 
       & ~ span {
         text-transform: uppercase;
-        font-size: 16px;
+        font-size: 1rem;
         font-weight: 400;
       }
     }

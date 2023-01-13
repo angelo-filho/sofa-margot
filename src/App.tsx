@@ -1,9 +1,22 @@
+import { useState } from "react";
 import styles from "./styles/app.module.scss";
 
 function App() {
+  const [shouldRotate, setShouldRotate] = useState(false);
+
   return (
     <div className={styles.container}>
-      <div></div>
+      <div className={styles.product}>
+        <img
+          src={shouldRotate ? "/sofa-margot.gif" : "/sofa-margot.png"}
+          alt="Sofa margot 2 rosa"
+        />
+        {/* <img src="/sofa-margot.gif" alt="Sofa margot 2 rosa" /> */}
+        <button onClick={() => setShouldRotate(!shouldRotate)}>
+          <img src={shouldRotate ? "x.svg" : "/360.svg"} />
+        </button>
+      </div>
+
       <div className={styles.product_info}>
         <div>
           <span>CÓDIGO: 42404</span>
